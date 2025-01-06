@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <div class = "search">
+            <input class="search-bar" id = "cityName" type="text" placeholder="Enter City Name" >
+            <button class = "search-button">Search</button>
+        </div>
+        <div class="error">
+            <p>Invalid city name.</p>
+        </div>
+        <div class="result">   
+            <div class="weather">
+                <img class="climate" id="climate" src="./imgs/rain.png">
+                <h1 class="temp">30°C</h1>
+                <h1 class="city">Chennai</h1>
+            </div>
+            <div class="details">
+                <div class="col">
+                    <img src="./imgs/humidity.png" class="humidity-img">
+                    <p class="humidity">10%</p>
+                    <p>Humidity</p>
+                </div>
+                <div class="col">
+                    <img src="./imgs/wind.png" class="wind-img">
+                    <p class="wind">25 km/h</p>
+                    <p>wind</p>
+                </div>
+            </div>
+        </div>
+    </div>  
+
+    <script src="script.js"></script>
+</body>
+</html>
