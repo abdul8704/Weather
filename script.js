@@ -14,6 +14,7 @@ async function getWeather(city){
         document.querySelector(".result").style.display = "none";
     }
     else{
+        document.querySelector(".error").style.display = "none"
         document.querySelector(".result").style.display = "block";
         var data = await response.json();
 
